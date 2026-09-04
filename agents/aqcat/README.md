@@ -10,6 +10,8 @@ This agent gives Discovery users conversational access to that capability. A res
 
 **Intended user:** computational chemists, catalysis researchers, and materials scientists doing candidate triage.
 
+**Related agents.** [`aqpotency`](../aqpotency/README.md) covers small-molecule potency and selectivity on the same platform and the same connection. [`sandboxaq`](../sandboxaq/README.md) is separate — it prompts a SandboxAQ model you have subscribed to in Azure AI Foundry, and needs no platform tenant.
+
 **Successful outcome:** a ranked, correctly-attributed set of adsorption energies with units intact, each reported with its convergence status and the resolved bulk identifier, plus an explicit statement of which systems fall outside the model's applicability.
 
 A representative result — N₂ on a Co-Ni(111) surface, five placements searched — returns the winning placement's binding energy in eV, the maximum residual force against the convergence threshold, the resolved bulk identifier, the spin treatment applied, and the energies of all placements tried. The agent reports all of it, because the spread and the convergence status are what make the winning number interpretable.

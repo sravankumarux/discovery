@@ -14,6 +14,18 @@ endpoint from a Discovery-managed tool container. This deployment includes:
 - **Tool Definition**: Configuration for the `sandboxaq-model` tool
 - **Agent Definition**: AI agent configuration for the SandboxAQ agent
 
+### Which SandboxAQ agent do I want?
+
+Three SandboxAQ agents are published in this catalog. Choose by what you have access to:
+
+| Agent | Use it when | Requires |
+|---|---|---|
+| **`sandboxaq`** (this one) | You have subscribed to a SandboxAQ model in Azure AI Foundry and want to prompt it directly | A SandboxAQ model subscription in Foundry |
+| [**`aqcat`**](../aqcat/README.md) | You want adsorption energies and surface reactivity for catalysis | A SandboxAQ AI Simulation Platform tenant |
+| [**`aqpotency`**](../aqpotency/README.md) | You want small-molecule potency, selectivity, or library screening | A SandboxAQ AI Simulation Platform tenant |
+
+This agent is general-purpose inference against a model deployment you control. The other two are domain agents that reach specific scientific tools on the SandboxAQ platform.
+
 ## Prerequisites
 
 Before starting the deployment, ensure you have:
